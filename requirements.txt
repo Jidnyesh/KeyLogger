@@ -1,0 +1,6 @@
+pynput==1.4.2
+python-dotenv==0.10.2
+python-http-client==3.1.0
+python-xlib==0.25
+sendgrid==6.0.5
+six==1.12.0
