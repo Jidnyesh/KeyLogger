@@ -14,6 +14,7 @@ First create a virtual enviroment in the same folder and activate it
 
 #Windows
 
+
 Then pip3 install -r requirements.txt
 The main.py is the keylogger file
 edit the to_mail variable with your own mail
